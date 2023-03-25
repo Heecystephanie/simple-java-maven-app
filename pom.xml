@@ -69,4 +69,29 @@
       </plugin>
     </plugins>
   </build>
+  
+  
+  <properties>
+                <sonar.host.url>http://3.101.30.139:9000/</sonar.host.url>
+                <sonar.login>admin</sonar.login>
+                <sonar.password>admin</sonar.password>
+        </properties>
+
+
+<distributionManagement>
+
+            <repository>
+              <id>nexus</id>
+              <name>Landmark Technologies Releases Nexus Repository</name>
+              <url>http://54.241.132.68:8081/repository/app-release/</url>
+            </repository>
+
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>Landmark Technologies Snapshot Nexus Repository </name>
+              <url>http://54.241.132.68:8081/repository/app-snap/</url>
+            </snapshotRepository>
+        </distributionManagement>
+
+  
 </project>
